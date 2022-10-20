@@ -51,11 +51,11 @@ run rpm -ivh mutter*.rpm
 pkgver=$(rpm -q ./mutter*rpm|cut -d '-' -f 2)
 
 # 2. generate patch for build
-run tar -xvf ${topdir}/SOURCES/mutter-42.4.tar.xz
-run wget ${blur_effect_url}/42.4/src/shell-blur-effect.c
-run wget ${blur_effect_url}/42.4/src/shell-blur-effect.h
+run tar -xvf ${topdir}/SOURCES/mutter-42.5.tar.xz
+run wget ${blur_effect_url}/42.5/src/shell-blur-effect.c
+run wget ${blur_effect_url}/42.5/src/shell-blur-effect.h
 
-run cd mutter-42.4
+run cd mutter-42.5
 run git init
 run git config user.name "your name"
 run git config user.email "email@example.com"
